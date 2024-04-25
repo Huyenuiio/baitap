@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            width: 546px;
+            height: auto;
+            border: 1px solid #ccc;
+            display: inline-block;
+            outline: none;
+            box-sizing: border-box;
+            background-color: white;
+            color: black;
+            padding: 16px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        input[type=text], input[type=password] {
+            width: 90%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+        input[type=text]:focus, input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        .btn:hover {
+            opacity: 1;
+        }
+        .img-avatar{
+            border-radius: 341px;
+        }
+        .foot{
+            width: 100px;
+            height: 100px;
+        }
+        #huy{
+            background-color: #f44336;
+            margin: 34px 0;
+        }
+        .big-foot{
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <form class="container">
+        <img     class="img-avatar"          src="du_lieu_thuc_hanh_B1/images/img_avatar.png" alt="png">
+        <label for="uname"><b>Tài Khoản</b></label><br>
+        <input type="text" placeholder="Nhập Tài Khoản" name="uname" required>
+        <label for="psw"><b>Mật Khẩu</b></label><br>
+        <input type="password" placeholder="Nhập Mật Khẩu" name="psw" required>
+        <button type="submit" class="btn">Đăng nhập</button>
+        <label for="remember">  <input type="checkbox" id="remember" name="remember">Nhớ đăng nhập
+        </label>
+        <div class="big-foot">
+    <div class="foot">
+
+        <button  id="huy"   type="reset" class="btn">Hủy</button>
+
+    </div>
+</div>
+    </form>
+</body>
+</html>
